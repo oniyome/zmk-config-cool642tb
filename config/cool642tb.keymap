@@ -65,6 +65,34 @@
             bindings = <&kp ESC &kp I &kp SPACE &kp ESC>;
             label = "OBS_SPACE";
         };
+
+        toka: toka {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp O &kp K &kp A &kp UNDER &kp N0 &kp N0 &kp N9 &kp N2 &kp N1 &kp ENTER>;
+            label = "TOKA";
+        };
+
+        telegram: telegram {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LWIN &kp T &kp E &kp L &kp E &kp G &kp R &kp A &kp M &kp ENTER>;
+            label = "TELEGRAM";
+        };
+
+        skype: skype {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LWIN &kp S &kp K &kp Y &kp P &kp E &kp ENTER>;
+            label = "SKYPE";
+        };
+
+        wechat: wechat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LWIN &kp W &kp E &kp C &kp H &kp A &kp T &kp ENTER>;
+            label = "WECHAT";
+        };
     };
 
     behaviors {
