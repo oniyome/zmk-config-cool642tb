@@ -93,6 +93,13 @@
             bindings = <&kt LWIN &kp W &kp E &kp C &kp H &kp A &kp T &kp ENTER>;
             label = "WECHAT";
         };
+
+        obs_insert: obs_insert {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESC &kp ESC &kp A &kp LC(SPACE)>;
+            label = "OBS_INSERT";
+        };
     };
 
     behaviors {
@@ -122,10 +129,10 @@
 
         FUNCTION {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN   &kp POUND     &kp DOLLAR            &kp PERCENT                                &kp N6          &kp N7        &kp N8                &kp N9                 &kp N0
-&kp F2           &kp F4        &kp F6        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans      &trans  &kp AMPERSAND   &kp SQT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ENTER
-&kp LC(F6)       &trans        &kp LS(F10)   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &bt BT_CLR  &trans  &kp TILDE       &kp QUESTION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION
-&bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3          &bt BT_SEL 4           &trans      &trans  &bt BT_CLR_ALL                                                             &kp LEFT_SHIFT
+&kp EXCLAMATION  &kp AT_SIGN   &kp POUND     &kp DOLLAR            &kp PERCENT                                &kp EQUAL            &kp N7        &kp N8  &kp N9        &kp N0
+&kp F2           &kp F4        &kp F6        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans      &trans  &mt SEMICOLON COLON  &kp NUMBER_6  &kp N5  &kp NUMBER_4  &kp ENTER
+&kp LC(F6)       &trans        &kp LS(F10)   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &bt BT_CLR  &trans  &kp N0               &kp N1        &kp N2  &kp N3        &kp QUESTION
+&bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3          &bt BT_SEL 4           &trans      &trans  &obs_space                                               &bt BT_CLR
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
