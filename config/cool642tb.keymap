@@ -86,7 +86,7 @@
 &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3          &bt BT_SEL 4           &trans      &trans  &bt BT_CLR_ALL                                                             &kp LEFT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         NUM {
