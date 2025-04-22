@@ -114,6 +114,13 @@
             bindings = <&kp ESC &kp I &kp ENTER &kp ESC &kp UP &kp END>;
             label = "OBS_NEXT_LINE";
         };
+
+        snippet: snippet {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LWIN &kp S &kp N &kp I &kp P &kp P &kp E &kp T &kp RET>;
+            label = "SNIPPET";
+        };
     };
 
     behaviors {
@@ -135,7 +142,7 @@
 &kp Q        &kp W   &kp E   &kp R         &kp T                                   &kp Y        &kp U  &kp I      &kp O       &kp P
 &mt LSHFT A  &kp S   &kp D   &kp F         &kp G            &mkp MB3   &trans      &kp H        &kp J  &kp K      &kp L       &mt LSHFT MINUS
 &kp Z        &kp X   &kp C   &kp V         &kp B            &mkp MB1   &mkp MB2    &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&trans       &trans  &trans  &mt LALT ESC  &mt LCTRL ENTER  &lt 1 DEL  &lt 2 BSPC  &lt 4 SPACE                                &mt LWIN TAB
+&trans       &trans  &trans  &mt LALT ESC  &mt LCTRL ENTER  &lt 1 DEL  &lt 4 BSPC  &lt 3 SPACE                                &mt LWIN TAB
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
@@ -165,10 +172,10 @@
 
         ARROW {
             bindings = <
-&kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
-&kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
+&kp LC(LS(S))  &kp LC(LS(TAB))  &kp LC(TAB)        &kp LC(LS(A))  &kp LC(LS(T))                          &kp LC(N9)  &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)
+&trans         &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LC(LS(D))  &kp LC(LS(BACKSLASH))  &trans  &trans  &trans      &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)
+&trans         &kp LA(UP)       &kp LA(DOWN)       &kp F10        &trans                 &trans  &trans  &kp N       &kp M       &kp COMMA   &kp PERIOD  &kp SLASH
+&trans         &trans           &trans             &trans         &trans                 &trans  &trans  &trans                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -176,10 +183,10 @@
 
         MOUSE {
             bindings = <
-&kp CARET  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &kp T                                 &kp LA(LEFT_ARROW)  &gmail_clear  &kp K_MENU  &kp TILDE  &kp LA(RIGHT)
-&kp A      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp G          &kp N1         &trans  &kp LEFT            &kp DOWN      &kp UP      &kp RIGHT  &kp ENTER
-&kp Z      &mt SQT DQT     &mkp MB3        &kp V            &kp B          &kp N3         &trans  &kp N               &kp M         &mkp MB1    &mkp MB2   &kp SLASH
-&trans     &trans          &trans          &trans           &kp LA(ENTER)  &kp LC(ENTER)  &trans  &kp BACKSPACE                                            &trans
+&kp CARET  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &kp T                                 &kp LA(LEFT_ARROW)  &gmail_clear  &kp K_MENU   &kp TILDE      &kp LA(RIGHT)
+&kp A      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp G          &kp N1         &trans  &kp LEFT            &kp DOWN      &kp UP       &kp RIGHT      &kp ENTER
+&kp Z      &mt SQT DQT     &mkp MB3        &kp V            &kp B          &kp N3         &trans  &kp HOME            &kp END       &kp PAGE_UP  &kp PAGE_DOWN  &kp LC(SEMICOLON)
+&trans     &trans          &trans          &trans           &kp LA(ENTER)  &kp LC(ENTER)  &trans  &trans                                                        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
