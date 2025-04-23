@@ -140,12 +140,12 @@
         default_layer {
             bindings = <
 &kp Q        &kp W   &kp E   &kp R         &kp T                                   &kp Y        &kp U  &kp I      &kp O       &kp P
-&mt LSHFT A  &kp S   &kp D   &kp F         &kp G            &mkp MB3   &trans      &kp H        &kp J  &kp K      &kp L       &mt LSHFT MINUS
-&kp Z        &kp X   &kp C   &kp V         &kp B            &mkp MB1   &mkp MB2    &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&mt LSHFT A  &kp S   &kp D   &kp F         &kp G            &mkp LCLK  &trans      &kp H        &kp J  &kp K      &kp L       &mt LSHFT MINUS
+&kp Z        &kp X   &kp C   &kp V         &kp B            &mkp MCLK  &mkp RCLK   &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
 &trans       &trans  &trans  &mt LALT ESC  &mt LCTRL ENTER  &lt 1 DEL  &lt 4 BSPC  &lt 3 SPACE                                &mt LWIN TAB
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         FUNCTION {
@@ -184,8 +184,8 @@
         MOUSE {
             bindings = <
 &kp CARET  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &kp T                                 &kp LA(LEFT_ARROW)  &gmail_clear  &kp K_MENU   &kp TILDE      &kp LA(RIGHT)
-&kp A      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp G          &kp N1         &trans  &kp LEFT            &kp DOWN      &kp UP       &kp RIGHT      &obs_next_line
-&kp Z      &mt SQT DQT     &mkp MB3        &kp V            &kp B          &kp N3         &trans  &kp HOME            &kp END       &kp PAGE_UP  &kp PAGE_DOWN  &kp LC(SEMICOLON)
+&kp A      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp G          &trans         &trans  &kp LEFT            &kp DOWN      &kp UP       &kp RIGHT      &obs_next_line
+&kp Z      &mt SQT DQT     &mkp MB3        &kp V            &kp B          &trans         &trans  &kp HOME            &kp END       &kp PAGE_UP  &kp PAGE_DOWN  &kp LC(SEMICOLON)
 &trans     &trans          &trans          &trans           &kp LA(ENTER)  &kp LC(ENTER)  &trans  &trans                                                        &trans
             >;
 
