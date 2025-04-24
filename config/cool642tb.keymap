@@ -185,7 +185,7 @@
             bindings = <
 &kp CARET      &mkp MB1        &mmv MOVE_UP    &mkp MB2         &msc SCRL_UP                           &kp LA(LEFT_ARROW)  &gmail_clear  &kp K_APPLICATION  &kp TILDE      &kp LA(RIGHT)
 &kp LC(GRAVE)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans          &trans         &trans  &kp LEFT            &kp DOWN      &kp UP             &kp RIGHT      &obs_next_line
-&kp BACKSLASH  &mt SQT DQT     &mkp MB3        &kp V            &msc SCRL_DOWN  &trans         &trans  &kp HOME            &kp END       &kp PAGE_UP        &kp PAGE_DOWN  &kp LC(SEMICOLON)
+&kp BACKSLASH  &mt SQT DQT     &mkp MB3        &trans           &msc SCRL_DOWN  &trans         &trans  &kp HOME            &kp END       &kp PAGE_UP        &kp PAGE_DOWN  &kp LC(SEMICOLON)
 &trans         &trans          &trans          &trans           &kp LA(ENTER)   &kp LC(ENTER)  &trans  &trans                                                              &trans
             >;
 
