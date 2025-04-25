@@ -43,6 +43,11 @@
             timeout-ms = <0>;
             layers = <5>;
         };
+
+        Win {
+            bindings = <&kp LWIN>;
+            key-positions = <10 11>;
+        };
     };
 
     macros {
