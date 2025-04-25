@@ -162,10 +162,10 @@
 
         move {
             bindings = <
-&kp CARET      &mkp MB1        &mmv MOVE_UP    &mkp MB2         &msc SCRL_UP                           &kp LA(LEFT)  &gmail_clear  &kp K_APPLICATION  &kp TILDE      &kp LA(RIGHT)
-&kp LC(GRAVE)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LC(N1)      &trans         &trans  &kp LEFT      &kp DOWN      &kp UP             &kp RIGHT      &obs_next_line
-&kp BACKSLASH  &mt SQT DQT     &mkp MB3        &trans           &msc SCRL_DOWN  &trans         &trans  &kp HOME      &kp END       &kp PAGE_UP        &kp PAGE_DOWN  &kp LC(SEMICOLON)
-&trans         &trans          &trans          &trans           &kp LA(ENTER)   &kp LC(ENTER)  &trans  &trans                                                        &trans
+&kp CARET      &mkp MB1        &mmv MOVE_UP    &mkp MB2         &msc SCRL_UP                             &kp LA(LEFT)  &gmail_clear  &kp K_APPLICATION  &kp TILDE      &kp LA(RIGHT)
+&kp LC(GRAVE)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LC(N1)      &trans         &trans    &kp LEFT      &kp DOWN      &kp UP             &kp RIGHT      &obs_next_line
+&kp BACKSLASH  &mt SQT DQT     &mkp MB3        &trans           &msc SCRL_DOWN  &trans         &obs_fix  &kp HOME      &kp END       &kp PAGE_UP        &kp PAGE_DOWN  &kp LC(SEMICOLON)
+&trans         &trans          &trans          &trans           &kp LA(ENTER)   &kp LC(ENTER)  &trans    &trans                                                        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
