@@ -151,7 +151,7 @@
 &kp LA(TAB)  &trans       &trans       &mt LALT ESC  &mt LCTRL ENTER  &lt 1 DEL  &lt 2 BSPC  &lt 3 SPACE                                &mt LWIN TAB
             >;
 
-            sensor-bindings = <&inc_dec_kp A B>;
+            sensor-bindings = <&inc_dec_kp C D>;
         };
 
         Number {
