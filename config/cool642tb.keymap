@@ -139,30 +139,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-
-        my_mouse_scroll: my_mouse_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "MY_MOUSE_SCROLL";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-        };
-
-        my_mouse_scroll_var: my_mouse_scroll_var {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "MY_MOUSE_SCROLL_VAR";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
-        };
-
-        scroll_up_down: behavior_sensor_rotate_mouse {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            // 追加: スクロールのタップ時間を設定 (20ms)
-
-            tap-ms = <20>;
-        };
     };
 
     keymap {
@@ -176,7 +152,7 @@
 &mt LA(SPACE) LA(TAB)  &none        &trans       &mt LALT ESC  &mt LCTRL ENTER  &lt 1 DEL  &lt 2 BSPC  &lt 3 SPACE                                &mt LWIN TAB
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&none>;
         };
 
         sensor-bindings = <&scroll_up_down>;
