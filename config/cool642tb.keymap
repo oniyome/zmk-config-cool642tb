@@ -150,6 +150,15 @@
 
             tap-ms = <20>;
         };
+
+        my_sccroll: my_sccroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MY_SCCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc MOVE_X(10)>, <&msc SCRL_LEFT>;
+
+            tap-ms = <20>;
+        };
     };
 
     keymap {
