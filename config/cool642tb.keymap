@@ -169,7 +169,7 @@
 &mt LA(SPACE) LA(TAB)  &trans       &trans       &mt LALT ESC  &mt LCTRL ENTER  &lt 1 DEL  &lt 2 BSPC  &lt 3 SPACE                                &mt LWIN TAB
             >;
 
-            sensor-bindings = <&rot_kp PG_UP PG_DN>;
+            sensor-bindings = <&rot_kp K_SCROLL_UP C_AC_SCROLL_UP>;
         };
 
         Number {
