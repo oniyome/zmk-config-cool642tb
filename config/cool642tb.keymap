@@ -23,6 +23,12 @@
     acceleration-exponent = <2>;
 };
 
+&inc_dec_kp {
+    bindings = <&msc>, <&msc>;
+
+    tap-ms = <20>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -172,7 +178,7 @@
 &mt LA(SPACE) LA(TAB)  &trans       &trans       &mt LALT ESC  &mt LCTRL ENTER  &lt 1 DEL  &lt 2 BSPC  &lt 3 SPACE                                &mt LWIN TAB
             >;
 
-            sensor-bindings = <&my_sccroll>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         Number {
