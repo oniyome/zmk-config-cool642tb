@@ -172,7 +172,7 @@
 &mt LA(SPACE) LA(TAB)  &trans       &trans       &mt LALT ESC  &mt LCTRL ENTER  &lt 1 DEL  &lt 2 BSPC  &lt 3 SPACE                                &mt LWIN TAB
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&my_sccroll>;
         };
 
         Number {
