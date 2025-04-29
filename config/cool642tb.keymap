@@ -147,9 +147,15 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_DOWN>;
-
             tap-ms = <20>;
         };
+
+rot_kp: sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
     };
 
     keymap {
@@ -162,8 +168,7 @@
 &mt LC(Z) Z            &mt LC(X) X  &mt LC(C) C  &mt LC(V) V   &kp B            &mkp MB1   &mkp MB2    &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt LS(SLASH) SLASH
 &mt LA(SPACE) LA(TAB)  &none        &trans       &mt LALT ESC  &mt LCTRL ENTER  &lt 1 DEL  &lt 2 BSPC  &lt 3 SPACE                                &mt LWIN TAB
             >;
-
-            sensor-bindings = <&behavior_sensor_rotate>;
+            sensor-bindings = <&rot_kp PG_UP PG_DN>;
         };
 
         Number {
