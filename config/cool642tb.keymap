@@ -165,7 +165,7 @@
 &mt LA(SPACE) LA(TAB)  &trans       &trans       &mt LALT ESC  &mt LCTRL ENTER  &lt 1 DEL  &lt 2 BSPC  &lt 3 SPACE                                &mt LWIN TAB
             >;
 
-            sensor-bindings = <&my_mouse_scroll>;
+            sensor-bindings = <&my_mouse_scroll_var SCRL_UP SCRL_DOWN>;
         };
 
         Number {
