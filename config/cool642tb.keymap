@@ -82,7 +82,11 @@
         wechat: wechat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LWIN &kp W &kp E &kp C &kp H &kp A &kp T &kp ENTER>;
+            bindings =
+                <&kt LWIN>,
+                <&macro_wait_time 100>,
+                <&kp W &kp E &kp C &kp H &kp A &kp T &kp ENTER>;
+
             label = "WECHAT";
         };
 
@@ -110,7 +114,10 @@
         snippet: snippet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LWIN &kp S &kp N &kp I &kp P &kp P &kp E &kp T &kp RET>;
+            bindings =
+                <&kp LWIN &kp S &kp N &kp I &kp P &kp P &kp E &kp T &kp RET>,
+                <&macro_wait_time 100>;
+
             label = "SNIPPET";
         };
     };
