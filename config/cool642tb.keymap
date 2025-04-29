@@ -151,7 +151,7 @@
 &kp Q                  &kp W        &kp E        &kp R         &kp T                                   &kp Y        &kp U  &kp I      &kp O       &kp P
 &mt LSHFT A            &kp S        &kp D        &kp F         &kp G            &mkp MB3   &tog 2      &kp H        &kp J  &kp K      &kp L       &mt LSHFT MINUS
 &mt LC(Z) Z            &mt LC(X) X  &mt LC(C) C  &mt LC(V) V   &kp B            &mkp MB1   &mkp MB2    &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt LS(SLASH) SLASH
-&mt LA(SPACE) LA(TAB)  &trans       &trans       &mt LALT ESC  &mt LCTRL ENTER  &lt 1 DEL  &lt 2 BSPC  &lt 3 SPACE                                &mt LWIN TAB
+&mt LA(SPACE) LA(TAB)  &none        &trans       &mt LALT ESC  &mt LCTRL ENTER  &lt 1 DEL  &lt 2 BSPC  &lt 3 SPACE                                &mt LWIN TAB
             >;
 
             sensor-bindings = <&behavior_sensor_rotate>;
