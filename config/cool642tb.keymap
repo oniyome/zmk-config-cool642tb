@@ -148,8 +148,6 @@
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
-        sensor-bindings = <&scroll_up_down>;
-
         Number {
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN   &kp POUND     &kp DOLLAR            &kp PERCENT                                     &kp EQUAL            &mt LS(N7) N7  &mt LS(N8) N8  &mt LS(N9) N9  &kp PLUS
