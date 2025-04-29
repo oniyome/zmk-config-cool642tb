@@ -60,14 +60,21 @@
         telegram: telegram {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LWIN &kp T &kp E &kp L &kp E &kp G &kp R &kp A &kp M &kp ENTER>;
+            bindings =
+                <&kp LWIN>,
+                <&macro_wait_time 100>,
+                <&kp T &kp E &kp L &kp E &kp G &kp R &kp A &kp M &kp ENTER>;
+
             label = "TELEGRAM";
         };
 
         skype: skype {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LWIN &kp S &kp K &kp Y &kp P &kp E &kp ENTER>;
+            bindings =
+                <&kp LWIN &kp S &kp K &kp Y &kp P &kp E &kp ENTER>,
+                <&macro_wait_time 100>;
+
             label = "SKYPE";
         };
 
