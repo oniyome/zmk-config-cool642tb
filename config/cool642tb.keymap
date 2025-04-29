@@ -115,8 +115,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LWIN &kp S &kp N &kp I &kp P &kp P &kp E &kp T &kp RET>,
-                <&macro_wait_time 100>;
+                <&kp LWIN>,
+                <&macro_wait_time 100>,
+                <&kp S &kp N &kp I &kp P &kp P &kp E &kp T &kp RET>;
 
             label = "SNIPPET";
         };
