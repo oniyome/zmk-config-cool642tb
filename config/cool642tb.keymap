@@ -142,6 +142,14 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        encoder_msc_down_up: encoder_msc_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -154,8 +162,7 @@
 &mt LC(Z) Z            &mt LC(X) X  &mt LC(C) C  &mt LC(V) V   &kp B            &mkp MB1   &mkp MB2    &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt LS(SLASH) SLASH
 &mt LA(SPACE) LA(TAB)  &trans       &trans       &mt LALT ESC  &mt LCTRL ENTER  &lt 1 DEL  &lt 2 BSPC  &lt 3 SPACE                                &mt LWIN TAB
             >;
-
-            sensor-bindings = <&none>;
+                    sensor-bindings = <&encoder_msc_down_up>;
         };
 
         Number {
