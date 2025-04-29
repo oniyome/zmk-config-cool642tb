@@ -145,6 +145,13 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
+
+        my_mouse_scroll_var: my_mouse_scroll_var {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "MY_MOUSE_SCROLL_VAR";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+        };
     };
 
     keymap {
@@ -158,7 +165,7 @@
 &mt LA(SPACE) LA(TAB)  &trans       &trans       &mt LALT ESC  &mt LCTRL ENTER  &lt 1 DEL  &lt 2 BSPC  &lt 3 SPACE                                &mt LWIN TAB
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP C_AC_SCROLL_UP>;
+            sensor-bindings = <&my_mouse_scroll>;
         };
 
         Number {
