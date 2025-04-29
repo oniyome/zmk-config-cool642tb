@@ -14,6 +14,11 @@
     tapping-term-ms = <150>;
 };
 
+&mmv {
+    time-to-max-speed-ms = <100>;
+    acceleration-exponent = <4>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
