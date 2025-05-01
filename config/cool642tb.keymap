@@ -42,6 +42,11 @@
             bindings = <&kp LC(SPACE)>;
             key-positions = <38 41>;
         };
+
+        ESCx2 {
+            bindings = <&ESCx2>;
+            key-positions = <31 32>;
+        };
     };
 
     macros {
@@ -136,6 +141,13 @@
                 <&kp S &kp N &kp I &kp P &kp P &kp E &kp T &kp RET>;
 
             label = "SNIPPET";
+        };
+
+        ESCx2: ESCx2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESC &kp ESC>;
+            label = "ESCX2";
         };
     };
 
