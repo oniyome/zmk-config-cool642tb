@@ -50,7 +50,7 @@
 
         Alt+Tab {
             bindings = <&kp LA(TAB)>;
-            key-positions = <36 35>;
+            key-positions = <23 24>;
         };
     };
 
