@@ -45,7 +45,12 @@
 
         ESCx2 {
             bindings = <&ESCx2>;
-            key-positions = <31 32>;
+            key-positions = <7 8>;
+        };
+
+        Alt+Tab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <36 35>;
         };
     };
 
