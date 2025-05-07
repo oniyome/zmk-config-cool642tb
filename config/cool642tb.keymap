@@ -154,6 +154,13 @@
             bindings = <&kp ESC &kp ESC>;
             label = "ESCX2";
         };
+
+        j_wada_aa: j_wada_aa {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp J &kp DOT &kp W &kp A &kp D &kp A &kp TAB>;
+            label = "J_WADA_AA";
+        };
     };
 
     behaviors {
@@ -224,7 +231,7 @@
             bindings = <
 &kp LC(LS(S))  &kp LC(LS(TAB))  &kp LC(TAB)        &kp LC(LS(A))  &kp LC(LS(T))                              &kp LC(N9)  &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)
 &trans         &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LC(LS(D))  &kp LC(LS(BACKSLASH))  &trans  &caps_word  &trans      &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)
-&trans         &kp LA(UP)       &kp LA(DOWN)       &kp F10        &trans                 &trans  &trans      &snippet    &telegram   &skype      &wechat     &toka
+&trans         &kp LA(UP)       &kp LA(DOWN)       &kp F10        &trans                 &trans  &j_wada_aa  &snippet    &telegram   &skype      &wechat     &toka
 &trans         &trans           &trans             &trans         &trans                 &trans  &trans      &trans                                          &trans
             >;
 
