@@ -155,11 +155,15 @@
             label = "ESCX2";
         };
 
-        j_wada_aa: j_wada_aa {
+        j_wada_aa: j_wada_aa2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp J &kp DOT &kp W &kp A &kp D &kp A &kp TAB>;
-            label = "J_WADA_AA";
+            bindings =
+                <&kp J &kp DOT &kp W &kp A &kp D &kp A &kp DOT &kp A &kp A>,
+                <&macro_wait_time 100>,
+                <&kp TAB>;
+
+            label = "J_WADA_AA2";
         };
     };
 
