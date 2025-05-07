@@ -52,6 +52,11 @@
             bindings = <&kp LA(TAB)>;
             key-positions = <23 24>;
         };
+
+        Win+Tab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <11 12>;
+        };
     };
 
     macros {
@@ -213,7 +218,7 @@
 &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3          &bt BT_SEL 4           &trans      &obs_insert  &obs_space                                                        &bt BT_CLR
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_UP>;
         };
 
         move {
