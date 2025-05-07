@@ -160,7 +160,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp J &kp DOT &kp W &kp A &kp D &kp A &kp DOT &kp A &kp A>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 300>,
                 <&kp TAB>;
 
             label = "J_WADA_AA2";
