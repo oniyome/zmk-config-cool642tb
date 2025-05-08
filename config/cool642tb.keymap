@@ -57,6 +57,11 @@
             bindings = <&kp LG(TAB)>;
             key-positions = <11 12>;
         };
+
+        ESCx1 {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
     };
 
     macros {
