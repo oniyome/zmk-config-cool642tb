@@ -62,6 +62,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
         };
+
+        obs_fix {
+            bindings = <&obs_fix>;
+            key-positions = <18 19>;
+        };
     };
 
     macros {
